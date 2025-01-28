@@ -1,0 +1,13 @@
+---------------------------------------------
+-- USIMM: the Utah SImulated Memory Module --
+--              Version: 1.3               --
+---------------------------------------------
+Initializing.
+Core 0: Input trace file input/domains/lu/core_0-2 : Addresses will have prefix 0
+Core 1: Input trace file input/dummy : Addresses will have prefix 1
+Core 2: Input trace file input/dummy : Addresses will have prefix 2
+Core 3: Input trace file input/dummy : Addresses will have prefix 3
+Core 4: Input trace file input/dummy : Addresses will have prefix 4
+Core 5: Input trace file input/dummy : Addresses will have prefix 5
+Core 6: Input trace file input/dummy : Addresses will have prefix 6
+Missing DRAM chip parameter file.  Quitting. 
