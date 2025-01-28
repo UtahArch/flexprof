@@ -5,17 +5,6 @@ As we show in our paper, only a select programs benifit from profiling as such w
 Using the no_profile script can be used in case of time or system constraints.
 We also provide the ability to perform the profiling from scatch if wanted.
 
-### Import Traces:
-1. Download input.tar.xz, extract the contents into a folder named `input` (you may have to create this) at the root of the of the simulator. It must be named exactly `input` and contain everything that is included in the tarball. 
-2. Test: typing `ls` at the root of the project should look something like this:
-   1. ![alt text](readme1.png)
-3. Test: tying `ls` inside the `input` folder should look something like this
-   1. ![alt text](readme2.png)
-### Building:
-1. `cd src/`
-2. `make clean`
-3. `make all`
-4. `cd ..`
 
 ### Profiling Steps:
 Skip this if you want to use the preprofiled version.
