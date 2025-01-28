@@ -10,7 +10,7 @@ We also provide the ability to perform the profiling from scatch if wanted.
 Skip this if you want to use the preprofiled version.
 1. run `one_script.sh` (you may need to give it execute permissions `chmod +x one_script.sh`)
 ### No-Profiling steps:
-1. run `no_profile_one_script.sh` (you may need to give it execute permissions `no_profile_one_script.sh`)
+1. run `no_profile_one_script.sh` (you may need to give it execute permissions `chmod +x no_profile_one_script.sh`)
 2. This will only work if you:
    1. Have not ran `one_script.sh`, as it overrides the provided profiled data.
    2. Have ran `one_script.sh`, but let it finish profiling.
