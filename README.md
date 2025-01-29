@@ -19,18 +19,20 @@ If you have a decent cpu, we recommend opening `run.py` and modifying line 38, `
 `make all`\
 `cd ..`
 ### Running USIMM:
-#### Profiling Steps:
+Both methods end up having the same results. Both scrips will save a handful of figures that can be compared with the paper. 
+As this is a traced based, cycle accurate simulation the results should be exactly the same.  
+
+#### Profiling:
 Skip this if you want to use the preprofiled version.
 1. run `./one_script.sh` (you may need to give it execute permissions `chmod +x one_script.sh`)
-#### No-Profiling steps:
+2. Once complete, a handful of figures will appear in the root directory. No need to run the no-profiling script.
+#### No-Profiling:
 1. run `./no_profile_one_script.sh` (you may need to give it execute permissions `chmod +x no_profile_one_script.sh`)
 2. This will only work if:
    1. You have not ran `one_script.sh`, as it overrides the provided profiled data.
    2. You have ran `one_script.sh`, but let it finish profiling.
    3. If you have ran `one_script.sh` and did not let the profiling finish and do not want to profile, you must redownload the repo and start over.
 
-Both these methods will save a handful of figures that can be compared with the paper. 
-As this is a traced based, cycle accurate simulation the results should be exactly the same.
 
 #### Mixed Benchmakrs:
 We assume all programs are already profiled by the time we get here
