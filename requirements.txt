@@ -1,0 +1,4 @@
+matplotlib
+numpy
+pandas
+z3-solver

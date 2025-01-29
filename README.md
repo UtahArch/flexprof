@@ -9,6 +9,11 @@ Before the name FlexProf, we internally used the acronym "rwopt" (Read Write OPT
 
 If you have a decent cpu, we recommend opening `run.py` and modifying line 38, `max_processes = 20` to how every many threads you can spare.
 
+### Requirements
+1. `gcc12`
+2. `python 3.12`
+3. `git`
+4. `pip install -r requirements.txt`
 ### Profiling Steps:
 Skip this if you want to use the preprofiled version.
 1. run `./one_script.sh` (you may need to give it execute permissions `chmod +x one_script.sh`)
