@@ -58,7 +58,7 @@ fig, ax = plt.subplots(figsize=(10, 6))
 
 
 ax.scatter(x, true_ratios, label='Write Ratio', color='#fb6f92', s=300, zorder=3, marker='o', linewidths=2)
-ax.scatter(x, best_ratios, label='Write Priority Mode Usage', color='#448EE4', s=300, zorder=3, marker='x', linewidths=2)
+ax.scatter(x, best_ratios, label='Write-Mode Usage', color='#448EE4', s=300, zorder=3, marker='x', linewidths=2)
 
 # Function to format the tick labels as fractions, x/100
 def as_fraction(x, pos):
@@ -69,16 +69,19 @@ formatter = FuncFormatter(as_fraction)
 plt.gca().yaxis.set_major_formatter(formatter)
 plt.yticks(fontsize=21, rotation=45)
 
-# Add some text for labels, title, and custom x-axis tick labels, etc.
 ax.set_ylabel('Ratio', fontsize=21)
 ax.set_xlabel('Benchmarks', fontsize=21)
-ax.set_title('Program Read Write Ratio vs Write Priority Mode Usage', fontsize=21)
+ax.set_title('Program Read Write Ratio vs Needed Write-Mode Usage', fontsize=21)
 ax.set_xticks(x)
-ax.set_xticklabels(labels, rotation=45, ha='right',fontsize=21)
+ax.set_xticklabels(labels, rotation=45, ha='right', fontsize=21)
 ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, _: f'{x:.0%}'))
-ax.legend(fontsize=21)
-plt.grid(True)
-fig.tight_layout()
 
-plt.savefig("fig5.png")
-#plt.show()
+# Place the legend above the plot
+ax.legend(fontsize=21, loc='lower center', bbox_to_anchor=(0.5, 1.15), ncol=3)
+
+plt.grid(True)
+
+# Adjust layout to make space for the legend
+plt.subplots_adjust(top=0.85)
+
+plt.savefig("fig5.png", dpi=500, format="png", bbox_inches='tight')

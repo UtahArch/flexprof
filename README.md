@@ -3,25 +3,28 @@ The most computainally expensive part of running this simulation is performing t
 Depening on your system it can take anywhere between 1 to 3 days. Using a 32Gb system with an Intel i7-13700k, profiling took XX hours.
 As we show in our paper, only a select programs benifit from profiling as such we provide a path assuming profiling has been done. 
 Using the no_profile script can be used in case of time or system constraints.
-We also provide the ability to perform the profiling from scatch if wanted.
+We also provide the ability to perform the profiling from scatch.
 
+Before the name FlexProf, we internally used the acronym "rwopt" (Read Write OPTimization); if this is seen anywhere in the code, it is synonymous with FlexProf.
+
+If you have a decent cpu, we recommend opening `run.py` and modifying line 38, `max_processes = 20` to how every many threads you can spare.
 
 ### Profiling Steps:
 Skip this if you want to use the preprofiled version.
-1. run `one_script.sh` (you may need to give it execute permissions `chmod +x one_script.sh`)
+1. run `./one_script.sh` (you may need to give it execute permissions `chmod +x one_script.sh`)
 ### No-Profiling steps:
-1. run `no_profile_one_script.sh` (you may need to give it execute permissions `chmod +x no_profile_one_script.sh`)
-2. This will only work if you:
-   1. Have not ran `one_script.sh`, as it overrides the provided profiled data.
-   2. Have ran `one_script.sh`, but let it finish profiling.
-   3. If you have ran `one_script.sh` and did not let the profiling finish and do not want to profile, redownload the repo and start over.
+1. run `./no_profile_one_script.sh` (you may need to give it execute permissions `chmod +x no_profile_one_script.sh`)
+2. This will only work if:
+   1. You have not ran `one_script.sh`, as it overrides the provided profiled data.
+   2. You have ran `one_script.sh`, but let it finish profiling.
+   3. If you have ran `one_script.sh` and did not let the profiling finish and do not want to profile, you must redownload the repo and start over.
 
 Both these methods will save a handful of figures that can be compared with the paper. 
 As this is a traced based, cycle accurate simulation the results should be exactly the same.
 
 ### Mixed Benchmakrs:
 We assume all programs are already profiled by the time we get here
-1. run `mixed_script.sh`
+1. run `./two_script.sh` (you may need to give it execute permissions `chmod +x two_script.sh`)
 
 
 Original USIMM readme:

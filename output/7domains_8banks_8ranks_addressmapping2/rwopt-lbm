@@ -104,13 +104,13 @@ Read Page Hit Rate :            0.00000
 Write Page Hit Rate :           0.00000
 ------------------------------------
 -------- Domain Stats-----------
-Domain 0 Fake Requests: 1667421
-Domain 1 Fake Requests: 1610073
-Domain 2 Fake Requests: 1647217
-Domain 3 Fake Requests: 1656769
-Domain 4 Fake Requests: 1687975
-Domain 5 Fake Requests: 1473259
-Domain 6 Fake Requests: 1536572
+Domain 0 Fake Requests: 0
+Domain 1 Fake Requests: 0
+Domain 2 Fake Requests: 0
+Domain 3 Fake Requests: 0
+Domain 4 Fake Requests: 0
+Domain 5 Fake Requests: 0
+Domain 6 Fake Requests: 0
 
 #-----------------------------Simulated Cycles Break-Up-------------------------------------------
 Note:  1.(Read Cycles + Write Cycles + Read Other + Write Other) should add up to % cycles during which
