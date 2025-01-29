@@ -9,15 +9,20 @@ Before the name FlexProf, we internally used the acronym "rwopt" (Read Write OPT
 
 If you have a decent cpu, we recommend opening `run.py` and modifying line 38, `max_processes = 20` to how every many threads you can spare.
 
-### Requirements
+### Requirements:
 1. `gcc12`
 2. `python 3.12`
 3. `git`
 4. `pip install -r requirements.txt`
-### Profiling Steps:
+### Compiling:
+`cd src`\
+`make all`\
+`cd ..`
+### Running USIMM:
+#### Profiling Steps:
 Skip this if you want to use the preprofiled version.
 1. run `./one_script.sh` (you may need to give it execute permissions `chmod +x one_script.sh`)
-### No-Profiling steps:
+#### No-Profiling steps:
 1. run `./no_profile_one_script.sh` (you may need to give it execute permissions `chmod +x no_profile_one_script.sh`)
 2. This will only work if:
    1. You have not ran `one_script.sh`, as it overrides the provided profiled data.
@@ -27,9 +32,16 @@ Skip this if you want to use the preprofiled version.
 Both these methods will save a handful of figures that can be compared with the paper. 
 As this is a traced based, cycle accurate simulation the results should be exactly the same.
 
-### Mixed Benchmakrs:
+#### Mixed Benchmakrs:
 We assume all programs are already profiled by the time we get here
 1. run `./two_script.sh` (you may need to give it execute permissions `chmod +x two_script.sh`)
+
+### Running Z3
+We encourage users too look into the source code to view the equations being evaluated
+
+`cd z3`\
+`python3 sevengap.py` This evaluates the gap needed going from a read to write\
+`python3 sixgap.py` This evaluates the gap needed for everything else
 
 
 Original USIMM readme:
