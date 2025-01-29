@@ -19,7 +19,6 @@ If you have a decent cpu, we recommend opening `run.py` and modifying line 38, `
 `make all`\
 `cd ..`
 ### Running USIMM:
-Both methods end up having the same results. Both scrips will save a handful of figures that can be compared with the paper. 
 As this is a traced based, cycle accurate simulation the results should be exactly the same.  
 
 #### Profiling:
