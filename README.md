@@ -1,6 +1,6 @@
 # ASPLOS Artifact :
 The most computainally expensive part of running this simulation is performing the profiling stage. 
-Depening on your system it can take anywhere between 1 to 3 days. Using a 32Gb system with an Intel i7-13700k, profiling took XX hours.
+Depening on your system it can take anywhere between 1 to 3 days. Using a 32Gb system with an Intel i7-13700k, profiling took 20 hours.
 As we show in our paper, only a select programs benifit from profiling as such we provide a path assuming profiling has been done. 
 Using the no_profile script can be used in case of time or system constraints.
 We also provide the ability to perform the profiling from scatch.
