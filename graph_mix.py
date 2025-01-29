@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
-mix_outputs = "output/"
+mix_outputs = "output"
 
 base_results = {
     1: [],
@@ -67,7 +67,7 @@ for i in range(1, 11):
                 traces = traces[1::]
 
 
-    with open(f'{mix_outputs}/mix{i}_all_0/rwopt-runmix{i}') as f:
+    with open(f'{mix_outputs}/mix{i}/rwopt-runmix{i}') as f:
         traces = []
         for line in f:
             if 'Input trace file' in line:
@@ -188,4 +188,4 @@ plt.legend(title='', bbox_to_anchor=(1.01, 1), loc='upper left', fontsize=17)
 # Adjust layout to make room for the legend
 # plt.tight_layout()
 # Show the plot
-plt.savefig("mixed_graph0.png", dpi=800, bbox_inches='tight', format="png")
+plt.savefig("fig9.png", bbox_inches='tight', format="png")

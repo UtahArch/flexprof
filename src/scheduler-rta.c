@@ -11,6 +11,8 @@
    scheduler.
 */
 
+//Called RTA but this is RQA. We do not have an implementation of RTA as it is insecure.
+
 int len_if_cmd(int channel){
   int len = 0;
   opt_queue_t *rq_ptr = NULL;

@@ -5,7 +5,7 @@ As we show in our paper, only a select programs benifit from profiling as such w
 Using the no_profile script can be used in case of time or system constraints.
 We also provide the ability to perform the profiling from scatch.
 
-Before the name FlexProf, we internally used the acronym "rwopt" (Read Write OPTimization); if this is seen anywhere in the code, it is synonymous with FlexProf.
+Before the name FlexProf, we internally used the acronym "rwopt" (Read Write OPTimization); if this is seen anywhere in the code, it is synonymous with FlexProf. Additonally there are many mentions of "rta" this is synonymous with secured "rqa" as mentioned in the paper. We do not implement base rta as it is insecure.
 
 If you have a decent cpu, we recommend opening `run.py` and modifying line 38, `max_processes = 20` to how every many threads you can spare.
 
