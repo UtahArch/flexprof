@@ -41,7 +41,7 @@ We assume all programs are already profiled by the time we get here
 We encourage users too look into the source code to view the equations being evaluated
 
 `cd z3`\
-`python3 sevengap.py` This evaluates the gap needed going from a read to write\
+`python3 sevengap.py` This evaluates the gap needed going from a write to read\
 `python3 sixgap.py` This evaluates the gap needed for everything else
 
 
