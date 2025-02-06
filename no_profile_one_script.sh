@@ -9,8 +9,8 @@ i=0
 for config in "${configs[@]}"
 do
     python3 run.py "$config" "${output[$i]}"
-    python3 stats.py > fig4.stats
-    python3 graphs.py fig4.stats #fig 7
+    python3 stats.py > fig7.stats
+    python3 graphs.py fig7.stats #fig 7
     python3 util_graph.py #fig 2
     python3 whats_sent_graph.py #fig 3
     python3 true_ratio_best_ratio_graph.py #fig 5
