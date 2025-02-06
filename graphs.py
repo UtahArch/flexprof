@@ -43,7 +43,7 @@ fig, ax1 = plt.subplots()
 colors_FlexProf = '#fb9062'
 colors_rta = '#ce4993'    
 colors_fsbta = '#6a0d83' 
-colors = plt.cm.get_cmap('tab10', 10) 
+colors = plt.colormaps['tab10']
 rects1 = ax1.bar(x, performance_rwopt_7, width, label='FlexProf', color=colors(0))
 rects3 = ax1.bar(x + width, performance_rta, width, label='RQA', color=colors(1))
 rects4 = ax1.bar(x + 2 * width, performance_fsbta, width, label='FS-BTA', color=colors(2))
@@ -87,5 +87,5 @@ plt.title("Performance Normalized Against The Non-Secure Baseline (Higher is Bet
 plt.legend(loc='center left', bbox_to_anchor=(1, 0.5), fontsize=18)
 
 plt.tight_layout()
-plt.savefig("fig4.png")
+plt.savefig("fig7.png")
 

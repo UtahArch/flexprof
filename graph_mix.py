@@ -144,7 +144,7 @@ mixes = df['Mix'].unique()
 
 # Create a bar plot for each mix on the same graph
 baseline = 1.0
-colors = plt.cm.get_cmap('tab10', len(mixes))  # Get a colormap with enough colors
+colors = plt.colormaps['tab10']
 
 # Create figure
 plt.figure(figsize=(20, 3.75))
