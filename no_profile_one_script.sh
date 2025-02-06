@@ -9,6 +9,7 @@ i=0
 for config in "${configs[@]}"
 do
     python3 run.py "$config" "${output[$i]}"
+    python3 stats.py > fig4.stats
     python3 graphs.py fig4.stats #fig 7
     python3 util_graph.py #fig 2
     python3 whats_sent_graph.py #fig 3
